@@ -1,0 +1,140 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"	,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"	,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/menu/index",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/info/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/index/store-cer/store-cer",
+			"style": {
+				"navigationBarTitleText": "门店认证"
+			}
+		},
+		{
+			"path": "pages/index/store-photo/store-photo",
+			"style": {
+				"navigationBarTitleText": "门店认证"
+			}
+		},
+		{
+			"path" : "pages/index/store-good/store-good",
+			"style" : 
+			{
+				"navigationBarTitleText" : "商品管理"
+			}
+		},
+		{
+			"path" : "pages/index/good-admin/good-admin",
+			"style" : 
+			{
+				"navigationBarTitleText" : "商品",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/index/good-admin/good-detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "商品详情",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#13227a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/home.png",
+				"selectedIconPath": "static/image/home_on.png",
+				"text": "首页"
+			}, 
+			
+			// {
+			// 	"pagePath": "pages/order/index",
+			// 	"iconPath": "static/image/order.png",
+			// 	"selectedIconPath": "static/image/order_on.png",
+			// 	"text": "订单"
+			// },
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/image/cart.png",
+				"selectedIconPath": "static/image/cart_on.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/info/index",
+				"iconPath": "static/image/info.png",
+				"selectedIconPath": "static/image/info_on.png",
+				"text": "我的"
+			}
+		]
+	}
+}
